@@ -28,16 +28,17 @@ export default new Vuex.Store({
     ]
   },
   mutations: {
-    newsId(state, news_id) {
+    changeNewsId(state, news_id) {
       state.news_id = news_id;
     },
     changeContent(state, payload) {
-      state.contents.map((item) => {
-        if (item.id === payload.id) {
-          item.text = payload.text;
-          return item;
-        }
-      });
+      Vue.set(state.contents, 0, { id: payload.id, text: payload.text });
+      // state.contents.map((item) => {
+      //   if (item.id === payload.id) {
+      //     item.text = payload.text;
+      //     return item;
+      //   }
+      // });
     }
   },
   getters: {

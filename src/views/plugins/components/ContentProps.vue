@@ -14,11 +14,15 @@ import store from "../store";
 export default {
   computed: {
     newsId: function () {
+      console.log(store.getters.getNewsId);
       return store.getters.getNewsId;
     },
     contents: function () {
-      // this.getData();
-      return store.getters.getContents;
+      let contents = store.getters.getContents;
+
+      console.log(contents);
+
+      return contents;
     },
   },
   methods: {
