@@ -53,12 +53,6 @@ export default new Vuex.Store({
 
     changeContent(state, payload) {
       Vue.set(state.contents, 0, { id: payload.id, text: payload.text });
-      // state.contents.map((item) => {
-      //   if (item.id === payload.id) {
-      //     item.text = payload.text;
-      //     return item;
-      //   }
-      // });
     }
   },
 
@@ -67,33 +61,15 @@ export default new Vuex.Store({
     // 方式1
     async handlerGetData({ commit, state }, payload) {
       setTimeout(() => {
-        console.log(payload);
-
-        console.log(state.news_id);
-
-        commit("newsId", payload);
-
-        console.log(state.news_id);
+        commit("changeNewsId", payload);
       }, 1000);
-      console.log(state.news_id);
-
-      // console.log(payload);
     },
 
     // 方式2
     async handlerGetData2(context, payload) {
       setTimeout(() => {
-        console.log(payload);
-
-        console.log(context.state.news_id);
-
-        context.commit("newsId", payload);
-
-        console.log(context.state.news_id);
+        context.commit("changeNewsId", payload);
       }, 1000);
-      console.log(context.state.news_id);
-
-      // console.log(payload);
     }
   },
   modules: {}

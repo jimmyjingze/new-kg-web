@@ -20,7 +20,7 @@ export default {
 
   methods: {
     handlerChangeNewsId() {
-      store.commit("newsId", this.searchContent);
+      store.commit("changeNewsId", this.searchContent);
     },
 
     handlerChangeContent() {
