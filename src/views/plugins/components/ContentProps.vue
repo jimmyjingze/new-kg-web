@@ -17,6 +17,7 @@ import store from "../store";
 export default {
   computed: {
     newsId: function () {
+      console.log(store.getters.getNewsId);
       return store.getters.getNewsId;
     },
 

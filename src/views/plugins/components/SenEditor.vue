@@ -4,7 +4,8 @@
            v-model="searchContent"
            @keyup.enter="handlerChangeNewsId" />
 
-    <button @click="handlerChangeContent">修改Content</button>
+    <button class="btn"
+            @click="handlerChangeContent">修改Content</button>
   </div>
 </template>
 
@@ -34,3 +35,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss" scoped>
+.btn {
+  z-index: 10;
+}
+</style>
