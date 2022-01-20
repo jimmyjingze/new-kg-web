@@ -9,7 +9,7 @@ export default {
   name: "LJZ",
   data() {
     return {
-      msg: "ljz",
+      msg: "在此区域完成百度首页的开发",
     };
   },
 };

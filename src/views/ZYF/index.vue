@@ -9,7 +9,7 @@ export default {
   name: "ZYF",
   data() {
     return {
-      msg: "zyf",
+      msg: "在此区域完成百度首页的开发",
     };
   },
 };
