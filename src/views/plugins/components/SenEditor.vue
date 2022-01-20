@@ -28,6 +28,8 @@ export default {
         text: Math.random().toString(),
       };
       store.commit("changeContent", payload);
+
+      store.dispatch("handlerGetData2", 99);
     },
   },
 };

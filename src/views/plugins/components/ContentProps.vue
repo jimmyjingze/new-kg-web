@@ -1,10 +1,13 @@
 <template>
   <div>
-    {{newsId}}
+    {{ newsId }}
+
+    <p>{{ newsDetail.title }}</p>
+    <p>{{ newsDetail.content }}</p>
 
     <div>
       <p v-for="content in contents"
-         :key="content.id">{{content.text}}</p>
+         :key="content.id">{{ content.text }}</p>
     </div>
   </div>
 </template>
@@ -16,9 +19,13 @@ export default {
     newsId: function () {
       return store.getters.getNewsId;
     },
+
     contents: function () {
-      // this.getData();
       return store.getters.getContents;
+    },
+
+    newsDetail: function () {
+      return store.getters.getNewsDetail;
     },
   },
   methods: {

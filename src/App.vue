@@ -2,8 +2,9 @@
   <div id="app">
     <div id="nav">
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link> |
-      <router-link to="/plugins">Plugins</router-link>
+      <router-link to="/plugins">Plugins</router-link> |
+      <router-link to="/zyf">ZYF</router-link> |
+      <router-link to="/ljz">LJZ</router-link>
     </div>
     <router-view />
   </div>
