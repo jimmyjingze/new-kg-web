@@ -293,12 +293,6 @@ export default {
     const r1 = graph.createNode({
       shape: "custom-rect",
       label: "开始",
-      attrs: {
-        body: {
-          rx: 20,
-          ry: 26,
-        },
-      },
     });
     const r2 = graph.createNode({
       shape: "custom-rect",
@@ -336,7 +330,7 @@ export default {
       shape: "custom-circle",
       label: "连接",
     });
-    stencil.load([r1, r2, r3, r4, r5, r6], "group1");
+    stencil.load([r1, r2], "group1");
 
     this.graph = graph;
     this.stencil = stencil;
@@ -560,10 +554,12 @@ export default {
 <style lang="scss" scoped>
 .antv-x6 {
   display: flex;
+  justify-content: space-between;
   .stencil {
     width: 200px;
     height: 300px;
     background: yellowgreen;
+    position: relative;
   }
 
   .graph-container {
