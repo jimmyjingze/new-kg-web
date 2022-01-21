@@ -3,6 +3,7 @@
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/plugins">Plugins</router-link> |
+      <router-link to="/antvx6">AntvX6</router-link> |
       <router-link to="/zyf">ZYF</router-link> |
       <router-link to="/ljz">LJZ</router-link>
     </div>

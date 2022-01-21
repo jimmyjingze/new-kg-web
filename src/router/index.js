@@ -16,6 +16,11 @@ const routes = [
     component: () => import("@/views/plugins/index.vue")
   },
   {
+    path: "/antvx6",
+    name: "AntvX6",
+    component: () => import("@/views/antvx6/index.vue")
+  },
+  {
     path: "/zyf",
     name: "ZYF",
     component: () => import("@/views/ZYF/index.vue")
