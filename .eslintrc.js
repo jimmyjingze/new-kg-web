@@ -3,6 +3,9 @@ module.exports = {
   env: {
     node: true
   },
+  globals: {
+    URL_DOMAIN: true
+  },
   extends: ["plugin:vue/essential", "eslint:recommended"],
   parserOptions: {
     parser: "babel-eslint"

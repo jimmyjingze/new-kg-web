@@ -16,6 +16,11 @@ const routes = [
     component: () => import("@/views/plugins/index.vue")
   },
   {
+    path: "/cloud-music",
+    name: "Plugins",
+    component: () => import("@/views/netease-cloud-music/index.vue")
+  },
+  {
     path: "/antvx6",
     name: "AntvX6",
     component: () => import("@/views/antvx6/index.vue")
