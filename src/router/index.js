@@ -17,7 +17,7 @@ const routes = [
   },
   {
     path: "/cloud-music",
-    name: "Plugins",
+    name: "CloudMusic",
     component: () => import("@/views/netease-cloud-music/index.vue")
   },
   {

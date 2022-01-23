@@ -11,3 +11,9 @@ npm install
 ```
 npm run serve
 ```
+
+### 网易云音乐的 API 接口
+
+```
+github: https://github.com/Binaryify/NeteaseCloudMusicApi
+```
