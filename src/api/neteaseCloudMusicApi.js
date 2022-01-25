@@ -26,3 +26,70 @@ export function getCaptcha(options) {
     params: options
   });
 }
+
+//歌单分类
+export function playList() {
+  return serviceHP({
+    url: NeteaseCloudMusicApi + "/playlist/catlist",
+    method: "post",
+  });
+}
+
+//热门歌单分类
+export function playListHot() {
+  return serviceHP({
+    url: NeteaseCloudMusicApi + "/playlist/hot",
+    method: "post",
+  });
+}
+
+//搜索
+export function keySearch(words) {
+  return serviceHP({
+    url: NeteaseCloudMusicApi + "/search",
+    method: "post",
+    params: words
+  });
+}
+
+//默认搜索关键词
+export function keyDefault() {
+  return serviceHP({
+    url: NeteaseCloudMusicApi + "/search/default",
+    method: "post",
+  });
+}
+
+//热搜列表(简略)
+export function hotList() {
+  return serviceHP({
+    url: NeteaseCloudMusicApi + "/search/hot",
+    method: "post",
+  });
+}
+
+//热搜列表(详细)
+export function hotListDetail() {
+  return serviceHP({
+    url: NeteaseCloudMusicApi + "/search/hot/detail",
+    method: "post",
+  });
+}
+
+//搜索建议
+export function keySearchSuggest(words) {
+  return serviceHP({
+    url: NeteaseCloudMusicApi + "/search/suggest",
+    method: "post",
+    params: words
+  });
+}
+
+//搜索多重匹配
+export function searchMultimatch(words) {
+  return serviceHP({
+    url: NeteaseCloudMusicApi + "/cloudsearch/multimatch",
+    method: "post",
+    params: words
+  });
+}
