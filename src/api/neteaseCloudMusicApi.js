@@ -27,7 +27,11 @@ export function getCaptcha(options) {
   });
 }
 
-//歌单分类
+
+/**
+ * @description 歌单分类
+ * 
+ */
 export function playList() {
   return serviceHP({
     url: NeteaseCloudMusicApi + "/playlist/catlist",
@@ -35,7 +39,12 @@ export function playList() {
   });
 }
 
-//热门歌单分类
+
+/**
+ * 
+ * @description 热门歌单分类
+ *
+ */
 export function playListHot() {
   return serviceHP({
     url: NeteaseCloudMusicApi + "/playlist/hot",
@@ -43,7 +52,12 @@ export function playListHot() {
   });
 }
 
-//搜索
+
+/**
+ * @description 搜索
+ * @param {keywords}  
+ * 
+ */
 export function keySearch(words) {
   return serviceHP({
     url: NeteaseCloudMusicApi + "/search",
@@ -52,7 +66,11 @@ export function keySearch(words) {
   });
 }
 
-//默认搜索关键词
+
+/**
+ * @description 默认搜索关键词
+ * 
+ */
 export function keyDefault() {
   return serviceHP({
     url: NeteaseCloudMusicApi + "/search/default",
@@ -60,7 +78,11 @@ export function keyDefault() {
   });
 }
 
-//热搜列表(简略)
+
+/**
+ * @description 热搜列表(简略)
+ * 
+ */
 export function hotList() {
   return serviceHP({
     url: NeteaseCloudMusicApi + "/search/hot",
@@ -68,7 +90,11 @@ export function hotList() {
   });
 }
 
-//热搜列表(详细)
+
+/**
+ * @description 热搜列表(详细)
+ * 
+ */
 export function hotListDetail() {
   return serviceHP({
     url: NeteaseCloudMusicApi + "/search/hot/detail",
@@ -76,7 +102,12 @@ export function hotListDetail() {
   });
 }
 
-//搜索建议
+
+
+/**
+ * @description 搜索建议
+ * @param {keywords}  
+ */
 export function keySearchSuggest(words) {
   return serviceHP({
     url: NeteaseCloudMusicApi + "/search/suggest",
@@ -85,7 +116,11 @@ export function keySearchSuggest(words) {
   });
 }
 
-//搜索多重匹配
+
+/**
+ * @description 搜索多重匹配
+ * @param {keywords}  
+ */
 export function searchMultimatch(words) {
   return serviceHP({
     url: NeteaseCloudMusicApi + "/cloudsearch/multimatch",
