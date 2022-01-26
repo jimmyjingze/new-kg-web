@@ -12,6 +12,23 @@
   </div>
 </template>
 
+<script>
+export default {
+  name: "App",
+  components: {},
+  data() {
+    return {};
+  },
+  created() {},
+  mounted() {},
+  destroyed() {},
+  computed() {},
+  methods: {},
+  watch: {},
+  filters: {},
+};
+</script>
+
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
